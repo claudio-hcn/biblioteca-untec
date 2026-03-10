@@ -179,6 +179,13 @@ public int contarAtrasados() throws SQLException {
     }
     return 0;
 }
-
+public void actualizarAtrasados() throws SQLException {
+    String sql = "UPDATE prestamos SET estado = 'ATRASADO' " +
+                 "WHERE estado = 'ACTIVO' AND fecha_limite < CURDATE()";
+    try (Connection conn = ConexionDB.getConnection();
+         PreparedStatement ps = conn.prepareStatement(sql)) {
+        ps.executeUpdate();
+    }
+}
 
 }

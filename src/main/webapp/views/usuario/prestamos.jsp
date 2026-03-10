@@ -111,7 +111,6 @@
                             <th>Fecha Límite</th>
                             <th>Fecha Devolución</th>
                             <th>Estado</th>
-                            <th>Acción</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -140,15 +139,7 @@
                                         </c:otherwise>
                                     </c:choose>
                                 </td>
-                                <td>
-                                    <c:if test="${prestamo.estado == 'ACTIVO'}">
-                                        <a href="<%=request.getContextPath()%>/usuario/prestamos?accion=devolver&id=${prestamo.idPrestamo}"
-                                           class="btn btn-success"
-                                           onclick="return confirm('¿Confirmar devolución?')">
-                                            Devolver
-                                        </a>
-                                    </c:if>
-                                </td>
+                              
                             </tr>
                         </c:forEach>
                     </tbody>

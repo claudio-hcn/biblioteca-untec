@@ -218,4 +218,4 @@ jbcrypt 0.4
 ## 👨‍💻 Desarrollado por
 
 **Claudio** — Bootcamp Java TD  
-Universidad UNTEC — 2026
+-2026

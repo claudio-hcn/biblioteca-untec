@@ -37,6 +37,7 @@ public class PrestamoServlet extends HttpServlet {
 
         try {
             PrestamoDAO prestamoDAO = new PrestamoDAO();
+            prestamoDAO.actualizarAtrasados(); 
             LibroDAO libroDAO = new LibroDAO();
 
             switch (accion) {

@@ -34,6 +34,7 @@ public class UsuarioDashboardServlet extends HttpServlet {
 
         try {
             PrestamoDAO prestamoDAO = new PrestamoDAO();
+            prestamoDAO.actualizarAtrasados(); 
             List<Prestamo> prestamos = prestamoDAO.listarPorUsuario(usuario.getIdUsuario());
             request.setAttribute("prestamos", prestamos);
 

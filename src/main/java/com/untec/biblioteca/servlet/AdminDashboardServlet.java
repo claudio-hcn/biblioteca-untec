@@ -34,6 +34,7 @@ public class AdminDashboardServlet extends HttpServlet {
 
         try {
             PrestamoDAO prestamoDAO = new PrestamoDAO();
+            prestamoDAO.actualizarAtrasados(); 
             UsuarioDAO usuarioDAO = new UsuarioDAO();
             LibroDAO libroDAO = new LibroDAO();
 
