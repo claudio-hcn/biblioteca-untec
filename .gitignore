@@ -1,0 +1,26 @@
+# Maven
+target/
+
+# VS Code
+.vscode/
+*.class
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Logs
+*.log
+logs/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Credenciales sensibles
+src/main/java/com/untec/biblioteca/dao/ConexionDB.java

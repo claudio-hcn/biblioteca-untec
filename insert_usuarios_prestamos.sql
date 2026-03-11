@@ -24,7 +24,6 @@ SELECT id_libro, titulo FROM libros LIMIT 60;
 -- inserts de préstamos
 INSERT INTO prestamos (id_usuario, id_libro, fecha_prestamo, fecha_limite, fecha_devolucion, estado) VALUES
 -- Préstamos ACTIVOS
-(2, 6, '2026-03-01', '2026-03-10', NULL, 'ACTIVO'),
 (3, 7, '2026-03-03', '2026-03-12', NULL, 'ACTIVO'),
 (4, 31, '2026-03-05', '2026-03-14', NULL, 'ACTIVO'),
 (5, 13, '2026-03-06', '2026-03-17', NULL, 'ACTIVO'),
@@ -44,7 +43,6 @@ INSERT INTO prestamos (id_usuario, id_libro, fecha_prestamo, fecha_limite, fecha
 (15, 4, '2026-01-08', '2026-01-17', '2026-01-15', 'DEVUELTO'),
 (16, 5, '2026-01-10', '2026-01-19', '2026-01-18', 'DEVUELTO'),
 (17, 10, '2026-01-15', '2026-01-24', '2026-01-22', 'DEVUELTO'),
-(2, 22, '2026-01-20', '2026-01-29', '2026-01-28', 'DEVUELTO'),
 (3, 38, '2026-02-01', '2026-02-10', '2026-02-08', 'DEVUELTO'),
 (4, 44, '2026-02-05', '2026-02-14', '2026-02-13', 'DEVUELTO'),
 (5, 48, '2026-02-10', '2026-02-19', '2026-02-17', 'DEVUELTO');
